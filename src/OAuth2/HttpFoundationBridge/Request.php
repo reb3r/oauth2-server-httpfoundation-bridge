@@ -17,11 +17,6 @@ class Request extends BaseRequest implements RequestInterface
         return $this->query->get($name, $default);
     }
 
-    public function query($name, $default = null)
-    {
-        return $this->query->get($name, $default);
-    }
-
     public function request($name, $default = null)
     {
         return $this->request->get($name, $default);
