@@ -59,17 +59,14 @@ class Response extends JsonResponse implements ResponseInterface
         if ($params) {
             // add the params to the URL
             $parts = parse_url($url);
-            $sep = isset($parts['query']) ? '&' : '?'; //If query part already exits & chaining is required
+            $sep = isset($parts['query']) && !empty($parts['query']) ? '&' : '?';
             $url .= $sep . http_build_query($params);
         }
 
         $this->headers->set('Location', $url);
     }
-    
-    /**
-     * @param int $statusCode
-     */
-    public function setStatusCode($statusCode, $text = null): object
+
+    public function setStatusCode(int $statusCode, ?string $text = null): static
     {
         return parent::setStatusCode($statusCode);
     }

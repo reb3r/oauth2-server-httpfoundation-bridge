@@ -88,15 +88,15 @@ public function execute(Request $request)
 
 ## Examples
 
- * OAuth2 Request - [Silex Integration](https://github.com/bshaffer/oauth2-demo-php/blob/master/web/index.php#L47)
- * OAuth2 Response - [Silex Integration](https://github.com/bshaffer/oauth2-demo-php/blob/master/src/OAuth2Demo/Server/Controllers/Token.php#L26)
+* OAuth2 Request - [Silex Integration](https://github.com/bshaffer/oauth2-demo-php/blob/master/web/index.php#L47)
+* OAuth2 Response - [Silex Integration](https://github.com/bshaffer/oauth2-demo-php/blob/master/src/OAuth2Demo/Server/Controllers/Token.php#L26)
 
 Contact
 -------
 
 Please contact Christian Reber (christian.reber <at> fujitsu <dot> com) for more information
-    
+
 Acknowledgements
 -------
 
-Very big "Thank you" goes to Brent Shaffer (https://github.com/bshaffer) for the original version which I forked.
+Very big "Thank you" goes to Brent Shaffer (<https://github.com/bshaffer>) for the original version which I forked.

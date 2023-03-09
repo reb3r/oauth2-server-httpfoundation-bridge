@@ -1,36 +1,38 @@
 {
-	"name" : "reb3r/oauth2-server-httpfoundation-bridge",
-	"description" : "A bridge to HttpFoundation for oauth2-server-php",
-	"keywords" : [
+	"name": "reb3r/oauth2-server-httpfoundation-bridge",
+	"description": "A bridge to HttpFoundation for oauth2-server-php",
+	"keywords": [
 		"oauth",
 		"oauth2",
 		"auth",
 		"httpfoundation"
 	],
-	"type" : "library",
-	"license" : "MIT",
-	"authors" : [{
-			"name" : "Brent Shaffer",
-			"email" : "bshafs@gmail.com",
-			"homepage" : "http://brentertainment.com"
-		}, {
-			"name" : "Christian Reber",
-			"email" : "chris@creber.de"
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Brent Shaffer",
+			"email": "bshafs@gmail.com",
+			"homepage": "http://brentertainment.com"
+		},
+		{
+			"name": "Christian Reber",
+			"email": "chris@creber.de"
 		}
 	],
-	"homepage" : "http://github.com/bshaffer/oauth2-server-httpfoundation-bridge",
-	"require" : {
-		"php" : "^7.3|^8.0",
-		"symfony/http-foundation" : ">=5.0",
-		"reb3r/oauth2-server-php" : ">=0.9"
+	"homepage": "http://github.com/bshaffer/oauth2-server-httpfoundation-bridge",
+	"require": {
+		"php": "^8.0",
+		"symfony/http-foundation": "^5.4||^6.0",
+		"reb3r/oauth2-server-php": ">=0.9"
 	},
-	"require-dev" : {
-		"phpunit/phpunit" : "^9.0"
+	"require-dev": {
+		"phpunit/phpunit": "^9.5"
 	},
-	"autoload" : {
-		"psr-0" : {
-			"OAuth2\\HttpFoundationBridge" : "src/"
+	"autoload": {
+		"psr-0": {
+			"OAuth2\\HttpFoundationBridge": "src/"
 		}
 	},
-	"minimum-stability" : "stable"
+	"minimum-stability": "stable"
 }
